@@ -63,14 +63,14 @@ function UserList() {
   <Container>
     <Paper elevation={3} style={{padding: '20px', margin: '20px'}}>
     <Typography variant='h4' gutterBottom style={{textAlign: 'center', color: 'orange'}}>
-    users Management
+    Users Management
     </Typography>
     <Grid container spacing={3}>
       {users.map((user)=>(
       <UserItem key={user.id} user={user} onEdit={setEditingUser} onDelete={deleteUser}/>
     ))}
     </Grid>
-    <Button variant='contained' style={{marginTop: '20px'}} onClick={()=>setEditingUser({})}>Add users</Button>
+    <Button variant='contained' style={{marginTop: '20px'}} onClick={()=>setEditingUser({})}>Add user</Button>
     {editingUser && (
       <UserForm user={editingUser} onSave={editingUser.id ? updateUser : addUser} onCancel={ ()=>setEditingUser(null)}/>
     )}
