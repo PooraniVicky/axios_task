@@ -1,18 +1,30 @@
 ## User Management with React and Axios
+
 This project is a user management application built with React, Axios, and Material-UI. It allows users to view, add, update, and delete user information. The user data is fetched from the JSONPlaceholder API.
 
 ## Features
+
 Fetch and display a list of users
+
 Add a new user
+
 Update existing user information
+
 Delete a user
+
 Display notifications for user actions
 
+
 ## Technologies Used
+
 React
+
 Axios
+
 Material-UI
+
 JSONPlaceholder API
+
 
 
 ## React + Vite
